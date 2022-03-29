@@ -1,0 +1,144 @@
+/*General */
+html,
+body {
+  font-family: raleway;
+}
+.flexCentre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.decorationNone {
+  text-decoration: none;
+}
+.bordureSearch {
+  border: none;
+}
+.text1 {
+  font-weight: bold;
+}
+.backgroundColor1 {
+  background-color: grey;
+}
+.backgroundColor2 {
+  background-color: blue;
+}
+.backgroundColor3 {
+  background-color: #deebff;
+}
+.color1 {
+  color: grey;
+}
+.color2 {
+  color: blue;
+}
+.color3 {
+  color: #deebff;
+}
+/* Nav */
+.sizeNav {
+  height: 100px;
+}
+.menu-container {
+  width: 30%;
+}
+.menu-items {
+  width: 140px;
+  height: 99px;
+}
+
+.coloritem1 {
+  color: blue;
+}
+.coloritem2 {
+  color: grey;
+}
+.coloritem3 {
+  color: black;
+}
+.bordureNav {
+  border-top: 1px solid blue;
+}
+.bordureNav2 {
+  border-top: 1px solid transparent;
+}
+.marglogo {
+  margin-bottom: 7px;
+}
+/*Section*/
+.bordureSearch {
+  width: 400px;
+  border-radius: 10px;
+  border: 0.5px solid #f2f2f2;
+}
+.paddingSearch {
+  padding-left: 20px;
+}
+.iconMap {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px 0 0 10px;
+}
+.recherche {
+  height: 50px;
+  width: 230px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+.buttonSearch {
+  height: 50px;
+  width: 120px;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+/*Filtres*/
+.filtre {
+  display: flex;
+  align-items: center;
+}
+.margFiltre {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.margH3 {
+  margin-right: 20px;
+}
+.textIcons {
+  border: 2px solid #f2f2f2;
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+.filtreIcons {
+  border-radius: 25px;
+  width: 52px;
+  height: 52px;
+  color: #0065fc;
+  background-color: #deebff;
+}
+.textIcons:hover > .filtreText {
+  color: #0065fc;
+}
+.textIcons:hover > .filtreIcons {
+  color: white;
+  background-color: 0065fc;
+}
+.filtreText {
+  margin-left: -2px;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0 25px 25px 0;
+}
