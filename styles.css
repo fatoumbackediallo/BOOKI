@@ -1,0 +1,221 @@
+/*General */
+html,
+body {
+  font-family: raleway;
+}
+.flexCentre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.decorationNone {
+  text-decoration: none;
+}
+.bordureSearch {
+  border: none;
+}
+.text1 {
+  font-weight: bold;
+}
+.backgroundColor1 {
+  background-color: grey;
+}
+.backgroundColor2 {
+  background-color: blue;
+}
+.backgroundColor3 {
+  background-color: #deebff;
+}
+.color1 {
+  color: grey;
+}
+.color2 {
+  color: blue;
+}
+.color3 {
+  color: #deebff;
+}
+/* Nav */
+.sizeNav {
+  height: 100px;
+}
+.menu-container {
+  width: 30%;
+}
+.menu-items {
+  width: 140px;
+  height: 99px;
+}
+
+.coloritem1 {
+  color: blue;
+}
+.coloritem2 {
+  color: grey;
+}
+.coloritem3 {
+  color: black;
+}
+.bordureNav {
+  border-top: 1px solid blue;
+}
+.bordureNav2 {
+  border-top: 1px solid transparent;
+}
+.marglogo {
+  margin-bottom: 7px;
+}
+/*Section*/
+.bordureSearch {
+  width: 400px;
+  border-radius: 10px;
+  border: 0.5px solid #f2f2f2;
+}
+.paddingSearch {
+  padding-left: 20px;
+}
+.iconMap {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px 0 0 10px;
+}
+.recherche {
+  height: 50px;
+  width: 230px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+.buttonSearch {
+  height: 50px;
+  width: 120px;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+/*Filtres*/
+.filtre {
+  display: flex;
+  align-items: center;
+}
+.margFiltre {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.margH3 {
+  margin-right: 20px;
+}
+.textIcons {
+  border: 2px solid #f2f2f2;
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+.filtreIcons {
+  border-radius: 25px;
+  width: 52px;
+  height: 52px;
+  color: #0065fc;
+  background-color: #deebff;
+}
+.textIcons:hover > .filtreText {
+  color: #0065fc;
+}
+.textIcons:hover > .filtreIcons {
+  color: white;
+  background-color: #0065fc;
+}
+.filtreText {
+  margin-left: -2px;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0 25px 25px 0;
+}
+/* Info Icon */
+.info {
+  display: flex;
+  align-items: center;
+}
+.formIcon {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  margin-right: 5px;
+}
+/* Hebergements */
+.menuHebergements {
+  flex: 2;
+  height: 650px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.menuPopulaires {
+  flex: 1;
+  height: 650px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.blockHebergement {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.imgHebergements1 {
+  background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+.imgHebergements2 {
+  background-image: url("./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+.imgHebergements3 {
+  background-image: url("./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+.imgHebergements4 {
+  background-image: url("./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+.imgHebergements5 {
+  background-image: url("./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+.imgHebergements6 {
+  background-image: url("./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
