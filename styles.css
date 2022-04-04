@@ -56,7 +56,6 @@ body {
   width: 140px;
   height: 99px;
 }
-
 .coloritem1 {
   color: blue;
 }
@@ -121,6 +120,9 @@ body {
   border-radius: 30px;
   margin-right: 20px;
 }
+.textIcons .flexCentre {
+  display: flex;
+}
 .filtreIcons {
   border-radius: 25px;
   width: 52px;
@@ -156,14 +158,113 @@ body {
 }
 /* Hebergements */
 .menuHebergements {
-  flex: 2;
-  height: 650px;
-  margin-right: 20px;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  /* height: 650px; */
+  border-radius: 30px;
+}
+.containerGlobalHebergements {
+  display: flex;
+  flex: 1;
+  margin-left: 3%;
+  margin-right: 3%;
+  justify-content: space-between;
+}
+.blocHebergements {
+  display: flex;
+  justify-content: space-around;
 }
 .menuPopulaires {
-  flex: 1;
-  height: 650px;
-  margin-left: 20px;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* height: 650px; */
+  border-radius: 30px;
+}
+.blocPopulaires {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+.star-selected {
+  color: blue;
+}
+.star-neutral {
+  color: grey;
+}
+.styleBloc {
+  border-radius: 20px;
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+}
+.imageHeb {
+  border-radius: 10px 10px 0 0;
+}
+.h3Bloc {
+  font-size: 18px;
+  /* margin: 10px 0 10px 0; */
+}
+.spanNuit {
+  font-size: 15px;
+  margin: 2% 0;
+}
+.star {
+  margin: 4% 0;
+}
+.h3MenuPop {
+  /* margin: 3px 0 3px 0; */
+  padding: 5%;
+}
+.starPop {
+  margin: 20% 0;
+}
+.imageBlocPop {
+  border-radius: 10px 0 0 10px;
+}
+.textBlocPop {
+  /* float: right; */
+  /* margin: 0 5px 5px 0; */
+  /* padding: 0px 10px 5px; */
+}
+.styleBlocPop {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+}
+.infoPlus {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: 10% 0;
+  font-weight: bold;
+}
+.titreAsidePop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menuGlobalPop {
+  display: flex;
+  width: 30%;
+}
+.menuActivites {
+  display: flex;
+}
+.imagesBlocActivites {
+  border-radius: 20px 20px 20px 20px;
+}
+.littleBox {
+  display: flex;
+  flex-direction: column;
+}
+.containerSize {
+  max-height: 100%;
+  width: auto;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: grey;
 }
