@@ -167,8 +167,8 @@ body {
 .containerGlobalHebergements {
   display: flex;
   flex: 1;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
   justify-content: space-between;
 }
 .blocHebergements {
@@ -258,10 +258,22 @@ body {
 .littleBox {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  overflow: hidden;
 }
-.containerSize {
-  max-height: 100%;
-  width: auto;
+.littleBox figure img {
+  min-height: 100%;
+  min-width: 100%;
+}
+.h2Activites {
+  display: flex;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+.h3activites {
+  border-radius: 20px 20px 20px 20px;
+  background-color: white;
+  margin-left: 3%;
 }
 .footer {
   display: flex;
