@@ -28,7 +28,7 @@ body {
   font-weight: bold;
 }
 .backgroundColor1 {
-  background-color: grey;
+  background-color: lightgray;
 }
 .backgroundColor2 {
   background-color: blue;
@@ -51,6 +51,7 @@ body {
 }
 .menu-container {
   width: 30%;
+  padding-left: 20%;
 }
 .menu-items {
   width: 140px;
@@ -73,8 +74,12 @@ body {
 }
 .marglogo {
   margin-bottom: 7px;
+  padding-left: 20%;
 }
 /*Section*/
+.styleSection {
+  padding-left: 2%;
+}
 .bordureSearch {
   width: 400px;
   border-radius: 10px;
@@ -157,13 +162,6 @@ body {
   margin-right: 5px;
 }
 /* Hebergements */
-.menuHebergements {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  /* height: 650px; */
-  border-radius: 30px;
-}
 .containerGlobalHebergements {
   display: flex;
   flex: 1;
@@ -171,38 +169,44 @@ body {
   margin-right: 2%;
   justify-content: space-between;
 }
-.blocHebergements {
-  display: flex;
-  justify-content: space-around;
-}
-.menuPopulaires {
-  display: flex;
+.menuHebergements {
   flex-direction: column;
-  /* height: 650px; */
+  width: 60%;
   border-radius: 30px;
 }
-.blocPopulaires {
+.blocHebergements {
   display: flex;
-  flex-direction: column;
-  padding: 1%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.textHeb {
+  padding: 20px 0 0 40px;
+  font-size: 25px;
 }
 .star-selected {
   color: blue;
 }
 .star-neutral {
-  color: grey;
+  color: lightgray;
 }
 .styleBloc {
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   background-color: white;
-  padding: 10px 10px 10px 10px;
+  padding: 5px 5px 5px 5px;
 }
-.imageHeb {
+.imgHebergements {
+  object-fit: cover;
   border-radius: 10px 10px 0 0;
+  width: 280px;
+  height: 200px;
+}
+.styleFigcap {
+  padding-left: 5%;
 }
 .h3Bloc {
   font-size: 18px;
-  /* margin: 10px 0 10px 0; */
 }
 .spanNuit {
   font-size: 15px;
@@ -211,20 +215,33 @@ body {
 .star {
   margin: 4% 0;
 }
-.h3MenuPop {
-  /* margin: 3px 0 3px 0; */
-  padding: 5%;
+.menuGlobalPop {
+  display: flex;
+  flex: 0.95;
+  flex-direction: column;
+  border-radius: 30px;
+  width: 35%;
 }
-.starPop {
-  margin: 20% 0;
-}
-.imageBlocPop {
-  border-radius: 10px 0 0 10px;
+.titreAsidePop {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10%;
 }
 .textBlocPop {
-  /* float: right; */
-  /* margin: 0 5px 5px 0; */
-  /* padding: 0px 10px 5px; */
+  padding-left: 20px;
+}
+.blocPopulaires {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.h3MenuPop {
+  padding: 50px 0 0 40px;
+  font-size: 25px;
+  margin: 0;
+}
+.starPop {
+  margin: 10% 0;
 }
 .styleBlocPop {
   display: flex;
@@ -233,37 +250,45 @@ body {
   background-color: white;
   padding: 5px 5px 5px 5px;
 }
+.imgBlocPop {
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+  width: 280px;
+  height: 200px;
+}
+
 .infoPlus {
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
-  margin: 10% 0;
+  font-size: 18px;
+  padding: 3%;
   font-weight: bold;
-}
-.titreAsidePop {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.menuGlobalPop {
-  display: flex;
-  width: 30%;
 }
 .menuActivites {
   display: flex;
 }
-.imagesBlocActivites {
-  border-radius: 20px 20px 20px 20px;
+.imgBlocActivites1 {
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+  width: 390px;
+  height: 390px;
+}
+.imgBlocActivites2 {
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+  width: 400px;
+  height: 250px;
+}
+.imageContainer {
+  display: flex;
+  flex: 1;
+  width: 100%;
 }
 .littleBox {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  overflow: hidden;
-}
-.littleBox figure img {
-  min-height: 100%;
-  min-width: 100%;
+  box-shadow: -5px 5px 5px 0 lightgray;
+  border-radius: 20px 20px 20px 20px;
 }
 .h2Activites {
   display: flex;
@@ -271,12 +296,15 @@ body {
   margin-top: 3%;
 }
 .h3activites {
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 0px 0px 20px 20px;
   background-color: white;
-  margin-left: 3%;
+  padding-left: 5px;
 }
 .footer {
   display: flex;
-  justify-content: space-between;
-  background-color: grey;
+  background-color: lightgray;
+  padding-left: 5%;
+}
+.footerItem {
+  padding-right: 20%;
 }
