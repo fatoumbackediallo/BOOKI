@@ -47,7 +47,11 @@ body {
 }
 /* Nav */
 .sizeNav {
-  height: 100px;
+  height: 120px;
+}
+.logo {
+  object-fit: cover;
+  width: 100px;
 }
 .menu-container {
   width: 30%;
@@ -74,7 +78,7 @@ body {
 }
 .marglogo {
   margin-bottom: 7px;
-  padding-left: 20%;
+  padding-left: 3%;
 }
 /*Section*/
 .styleSection {
@@ -256,7 +260,6 @@ body {
   width: 280px;
   height: 200px;
 }
-
 .infoPlus {
   display: flex;
   justify-content: space-between;
@@ -264,6 +267,7 @@ body {
   padding: 3%;
   font-weight: bold;
 }
+/*Activités*/
 .menuActivites {
   display: flex;
 }
@@ -300,6 +304,7 @@ body {
   background-color: white;
   padding-left: 5px;
 }
+/*Footer*/
 .footer {
   display: flex;
   background-color: lightgray;
@@ -307,4 +312,85 @@ body {
 }
 .footerItem {
   padding-right: 20%;
+}
+/*Media queries pour un Iphone 8*/
+@media all and (max-device-width: 480px) {
+  #bloc_page {
+    width: auto;
+  }
+  .nav {
+    width: auto;
+    flex-direction: column;
+  }
+  .sizeNav {
+    flex-direction: column;
+  }
+  .marglogo {
+    max-width: 100%;
+  }
+  .menu-container {
+    flex-direction: column;
+  }
+  h1 {
+    flex-direction: wrap;
+    margin-top: 5%;
+  }
+  .filtre {
+    flex-direction: column;
+    text-justify: left;
+  }
+  .info {
+    padding-bottom: 3%;
+  }
+  .menuGlobalPop {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .blocPopulaires {
+    flex-direction: column;
+  }
+  .imgBlocPop {
+    width: 50%;
+  }
+  .textBlocPop {
+    padding-left: 10%;
+  }
+  .styleBlocPop {
+    border-radius: 20px 20px 20px 20px;
+  }
+  .containerGlobalHebergements {
+    flex-direction: column-reverse;
+  }
+  .menuHebergements {
+    width: 100%;
+  }
+  .imgHebergements {
+    width: 100%;
+  }
+  .blocHebergements {
+    flex-direction: column;
+    width: 100%;
+  }
+  .infoPlus {
+    padding-left: 7%;
+  }
+  .menuActivites {
+    flex-direction: column;
+  }
+  .h2Activites {
+    padding-left: 3%;
+    padding-top: 5%;
+  }
+  .imgBlocActivites1 {
+    width: 100%;
+  }
+  .imgBlocActivites2 {
+    width: 100%;
+  }
+  .h3activites {
+    padding-left: 5%;
+  }
+  footer {
+    flex-direction: column;
+  }
 }
