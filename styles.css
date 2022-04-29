@@ -18,6 +18,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.headerForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .decorationNone {
   text-decoration: none;
 }
@@ -40,7 +45,7 @@ body {
   color: grey;
 }
 .color2 {
-  color: blue;
+  color: #0065fc;
 }
 .color3 {
   color: #deebff;
@@ -71,7 +76,7 @@ body {
   height: 99px;
 }
 .coloritem1 {
-  color: blue;
+  color: #0065fc;
 }
 .coloritem2 {
   color: grey;
@@ -80,7 +85,7 @@ body {
   color: black;
 }
 .bordureNav {
-  border-top: 1px solid blue;
+  border-top: 1px solid #0065fc;
 }
 .bordureNav2 {
   border-top: 1px solid transparent;
@@ -92,7 +97,7 @@ body {
 .bordureSearch {
   width: 400px;
   border-radius: 10px;
-  border: 0.5px solid #f2f2f2;
+  border: 0.1px solid #f2f2f2;
 }
 .paddingSearch {
   padding-left: 20px;
@@ -106,7 +111,7 @@ body {
   height: 50px;
   width: 230px;
   font-size: 18px;
-  color: black;
+  border-radius: 0;
   font-weight: bold;
 }
 .buttonSearch {
@@ -114,6 +119,15 @@ body {
   width: 120px;
   color: white;
   cursor: pointer;
+  border-style: none;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: #0065fc;
+}
+.fa-magnifying-glass {
+  display: none;
+}
+.buttonSearchContainer {
   border-radius: 0 10px 10px 0;
 }
 /*Filtres*/
@@ -133,6 +147,7 @@ body {
   height: 50px;
   border-radius: 30px;
   margin-right: 20px;
+  font-weight: bold;
 }
 .textIcons .flexCentre {
   display: flex;
@@ -195,7 +210,7 @@ body {
   font-size: 20px;
 }
 .star-selected {
-  color: blue;
+  color: #0065fc;
 }
 .star-neutral {
   color: lightgray;
@@ -214,7 +229,7 @@ body {
   object-fit: cover;
   border-radius: 10px 10px 0 0;
   width: 100%;
-  aspect-ratio: 2.3;
+  aspect-ratio: 16/7;
 }
 .styleFigcap {
   padding: 0 10px 0 10px;
@@ -273,7 +288,7 @@ body {
   object-fit: cover;
   border-radius: 10px 0 0 10px;
   width: 50%;
-  aspect-ratio: 1.2;
+  aspect-ratio: 6/5;
 }
 .infoPlus {
   display: flex;
@@ -291,7 +306,7 @@ body {
 }
 .Box1 {
   display: flex;
-  box-shadow: -5px 5px 5px 5px lightgray;
+  box-shadow: -5px 5px 5px 5px #f2f2f2;
   border-radius: 20px 20px 20px 20px;
   width: 25%;
   height: 445px;
@@ -315,7 +330,7 @@ body {
 .littleBox2 {
   display: flex;
   flex-direction: column;
-  box-shadow: -5px 5px 5px 3px lightgray;
+  box-shadow: -5px 5px 5px 3px #f2f2f2;
   border-radius: 20px 20px 20px 20px;
   margin: 0 20px 20px 5px;
   width: 100%;
@@ -348,7 +363,6 @@ body {
 .h2Activites {
   display: flex;
   margin-left: 20px;
-  /* margin-top: 5%; */
 }
 .h3activites {
   border-radius: 0px 0px 20px 20px;
@@ -361,7 +375,7 @@ figure {
 /*Footer*/
 .footerStyle {
   display: flex;
-  background-color: lightgray;
+  background-color: #f2f2f2;
   padding-left: 5%;
 }
 .footerItem {
@@ -375,7 +389,7 @@ figure {
   }
 }
 /*Pour les tablettes*/
-@media all and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+@media all and (min-width: 769px) and (max-width: 991px) and (orientation: portrait) {
   #bloc_page {
     width: auto;
   }
@@ -407,11 +421,11 @@ figure {
     width: 30%;
     align-items: flex-start;
   }
-  .flexBetween > textIcons {
+  .flexBetween .textIcons {
     justify-content: space-around;
     align-items: flex-start;
   }
-  .flexBetween > filtre {
+  .flexBetween .filtre {
     margin-bottom: 2%;
   }
   .containerGlobalHebergements {
@@ -459,12 +473,12 @@ figure {
   .styleBloc {
     width: 95%;
     height: 300px;
-    box-shadow: 5px lightgrey;
+    box-shadow: 0px 0px 5px 5px #f2f2f2;
     border-radius: 30px;
     padding-bottom: 10px;
   }
   .imgHebergements {
-    aspect-ratio: 3.5;
+    aspect-ratio: 7/2;
     border-radius: 30px 30px 0 0;
   }
   .star {
@@ -489,7 +503,6 @@ figure {
   .littleBox1 {
     width: 100%;
     height: auto;
-    /* margin-bottom: 5%; */
   }
   .imgBlocActivites1 {
     border-radius: 20px 20px 0 0;
@@ -525,8 +538,13 @@ figure {
     height: 70px;
   }
   .flexBetween {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .headerForm {
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: space-between;
   }
   .bordureSearch {
     width: 100%;
@@ -542,6 +560,16 @@ figure {
     align-items: center;
     border-radius: 0;
     padding-left: 20px;
+  }
+  .buttonSearch {
+    border: none;
+    width: 50px;
+  }
+  .fa-magnifying-glass {
+    display: block;
+  }
+  .searchButtonTittle {
+    display: none;
   }
   .styleSection {
     margin-top: 100px;
@@ -567,7 +595,7 @@ figure {
   }
   .bordureNav {
     border-top: 1px solid transparent;
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid #0065fc;
   }
   .bordureNav2 {
     border-bottom: 3px solid lightgray;
@@ -581,9 +609,8 @@ figure {
     width: auto;
   }
   .filtre {
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: start;
   }
   .margFiltre {
     margin-top: 20px;
@@ -591,19 +618,19 @@ figure {
   }
   .textIcons {
     height: 50px;
-    width: 55%;
+    width: auto;
     align-items: flex-start;
   }
   .filtreText {
-    padding: 0;
-    margin-left: -5%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  .flexBetween > textIcons {
+  .flexBetween .textIcons {
     justify-content: space-around;
     align-items: flex-start;
   }
-  .flexBetween > filtre {
-    margin-bottom: 30px;
+  .flexBetween {
+    margin-bottom: 10px;
   }
   .info {
     padding-bottom: 3%;
@@ -646,15 +673,15 @@ figure {
   }
   .styleBloc {
     width: auto;
-    box-shadow: 5px 5px 5px 5px lightgray;
+    box-shadow: 2px 2px 2px 2px #f2f2f2;
     border-radius: 30px;
     padding: 5px 5px 0 5px;
-    height: 220px;
+    height: 250px;
   }
   .imgHebergements {
     width: 100%;
+    height: 170px;
     border-radius: 30px 30px 0 0;
-    aspect-ratio: 2.7;
   }
   .h3Bloc {
     margin: 5px 5px 5px 0;

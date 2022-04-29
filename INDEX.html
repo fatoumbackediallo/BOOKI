@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,9 +20,9 @@
   <body>
     <header>
       <nav class="sizeNav">
-        <div class="flexBetween">
+        <div class="headerForm">
           <div>
-            <img src="./images/logo/Booki@3x.png" class="logo" />
+            <img src="./images/logo/Booki@3x.png" class="logo" alt="Booki" />
           </div>
           <div class="menu-container flexAround">
             <div class="menu-items flexCentre bordureNav">
@@ -51,37 +51,38 @@
             value="Marseille, France"
           />
         </div>
-        <div>
-          <input
-            type="button"
-            value="rechercher"
-            class="backgroundColor2 flexCentre buttonSearch"
-          />
+        <div class="buttonSearchContainer backgroundColor2">
+          <a class="flexCentre buttonSearch">
+            <span class="searchButtonTittle">Rechercher</span
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
         </div>
       </div>
-      <div class="filtre margFiltre">
+      <div class="margFiltre">
         <div class="margH3">
           <h3>Filtres</h3>
         </div>
-        <div class="flexBetween textIcons">
-          <i
-            class="fa-solid fa-money-bill-wave fa-lg filtreIcons flexCentre"
-          ></i>
-          <div class="filtreText flexCentre">Economique</div>
-        </div>
-        <div class="flexBetween textIcons">
-          <i
-            class="fa-solid fa-child-reaching fa-lg filtreIcons flexCentre"
-          ></i>
-          <div class="filtreText flexCentre">Familial</div>
-        </div>
-        <div class="flexBetween textIcons">
-          <i class="fa-solid fa-heart fa-lg filtreIcons flexCentre"></i>
-          <div class="filtreText flexCentre">Romantique</div>
-        </div>
-        <div class="flexBetween textIcons">
-          <i class="fa-solid fa-dog fa-lg filtreIcons flexCentre"></i>
-          <div class="filtreText flexCentre">Animaux autorisés</div>
+        <div class="filtre">
+          <div class="flexBetween textIcons">
+            <i
+              class="fa-solid fa-money-bill-wave fa-lg filtreIcons flexCentre"
+            ></i>
+            <div class="filtreText flexCentre">Economique</div>
+          </div>
+          <div class="flexBetween textIcons">
+            <i
+              class="fa-solid fa-child-reaching fa-lg filtreIcons flexCentre"
+            ></i>
+            <div class="filtreText flexCentre">Familial</div>
+          </div>
+          <div class="flexBetween textIcons">
+            <i class="fa-solid fa-heart fa-lg filtreIcons flexCentre"></i>
+            <div class="filtreText flexCentre">Romantique</div>
+          </div>
+          <div class="flexBetween textIcons">
+            <i class="fa-solid fa-dog fa-lg filtreIcons flexCentre"></i>
+            <div class="filtreText flexCentre">Animaux autorisés</div>
+          </div>
         </div>
       </div>
       <div class="info">
@@ -98,8 +99,9 @@
         <div class="blocHebergements">
           <figure class="styleBloc">
             <img
-              src="images/hebergements/4_small/Auberge La Cannebière.jpg"
+              src="images/hebergements/4_small/Auberge-La-Cannebière.jpg"
               class="imgHebergements"
+              alt="Auberge_La_Cannebière"
             />
             <figcaption class="styleFigcap">
               <h3 class="h3Bloc">Auberge La Cannebière</h3>
@@ -115,8 +117,9 @@
           </figure>
           <figure class="styleBloc">
             <img
-              src="images/hebergements/4_small/Hôtel du port.jpg"
+              src="images/hebergements/4_small/Hôtel-du-port.jpg"
               class="imgHebergements"
+              alt="Hôtel_du_port"
             />
             <figcaption class="styleFigcap">
               <h3 class="h3Bloc">Hôtel du port</h3>
@@ -132,8 +135,9 @@
           </figure>
           <figure class="styleBloc">
             <img
-              src="images/hebergements/4_small/Hôtel Les mouettes.jpg"
+              src="images/hebergements/4_small/Hôtel-Les-mouettes.jpg"
               class="imgHebergements"
+              alt="Hôtel_Les_mouettes"
             />
             <figcaption class="styleFigcap">
               <h3 class="h3Bloc">Hôtel Les mouettes</h3>
@@ -151,8 +155,9 @@
         <div class="blocHebergements">
           <figure class="styleBloc">
             <img
-              src="images/hebergements/4_small/Hotel de la mer.jpg"
+              src="images/hebergements/4_small/Hotel-de-la-mer.jpg"
               class="imgHebergements"
+              alt="Hôtel_de_la_mer"
             />
             <figcaption class="styleFigcap">
               <h3 class="h3Bloc">Hôtel de la mer</h3>
@@ -168,8 +173,9 @@
           </figure>
           <figure class="styleBloc">
             <img
-              src="images/hebergements/4_small/Auberge Le Panier.jpg"
+              src="images/hebergements/4_small/Auberge-Le-Panier.jpg"
               class="imgHebergements"
+              alt="Auberge_Le_Panier"
             />
             <figcaption class="styleFigcap">
               <h3 class="h3Bloc">Auberge Le Panier</h3>
@@ -185,8 +191,9 @@
           </figure>
           <figure class="styleBloc">
             <img
-              src="images/hebergements/4_small/Hôtel Chez Amina.jpg"
+              src="images/hebergements/4_small/Hôtel-Chez-Amina.jpg"
               class="imgHebergements"
+              alt="Hôtel_Chez_Amina"
             />
             <figcaption class="styleFigcap">
               <h3 class="h3Bloc">Hôtel Chez Amina</h3>
@@ -207,14 +214,15 @@
         <div class="titreAsidePop">
           <h3 class="h3MenuPop">Les plus populaires</h3>
           <div class="starPop">
-            <i class="fa-solid fa-chart-line"></i>
+            <i class="fa-star fa-solid"></i>
           </div>
         </div>
         <div class="blocPopulaires">
           <figure class="styleBlocPop">
             <img
-              src="images/hebergements/4_small/Hôtel Le soleil du matin.jpg"
+              src="images/hebergements/4_small/Hôtel-Le-soleil-du-matin.jpg"
               class="imgBlocPop"
+              alt="Hôtel_Le_soleil_du_matin"
             />
             <figcaption class="textBlocPop">
               <div>
@@ -232,8 +240,9 @@
           </figure>
           <figure class="styleBlocPop">
             <img
-              src="images/hebergements/4_small/Au coeur de l'eau Chambres d'hôtes.jpg"
+              src="images/hebergements/4_small/Au-coeur-de-l'eau-Chambres-d'hôtes.jpg"
               class="imgBlocPop"
+              alt="Au_coeur_de_l'eau_Chambres_d'hôtes"
             />
             <figcaption class="textBlocPop">
               <div>
@@ -251,8 +260,9 @@
           </figure>
           <figure class="styleBlocPop">
             <img
-              src="images/hebergements/4_small/Hôtel Tout bleu et Blanc.jpg"
+              src="images/hebergements/4_small/Hôtel-Tout-bleu-et-Blanc.jpg"
               class="imgBlocPop"
+              alt="Hôtel_Tout_bleu_et_Blanc"
             />
             <figcaption class="textBlocPop">
               <div>
@@ -279,7 +289,8 @@
             <div>
               <img
                 class="imgBlocActivites1"
-                src="images/activites/4_small/Vieux Port.jpg"
+                src="images/activites/4_small/Vieux-Port.jpg"
+                alt="Vieux_Port"
               />
             </div>
             <figcaption>
@@ -292,7 +303,8 @@
             <div>
               <img
                 class="imgBlocActivites2Size1"
-                src="images/activites/4_small/Fort de Pomègues.jpg"
+                src="images/activites/4_small/Fort-de-Pomègues.jpg"
+                alt="Fort_de_Pomègues"
               />
             </div>
             <figcaption>
@@ -303,7 +315,8 @@
             <div>
               <img
                 class="imgBlocActivites2Size2"
-                src="images/activites/4_small/Iles du Frioul.jpg"
+                src="images/activites/4_small/Iles-du-Frioul.jpg"
+                alt="Iles_du_Frioul"
               />
             </div>
             <figcaption>
@@ -316,7 +329,8 @@
             <div>
               <img
                 class="imgBlocActivites1"
-                src="images/activites/4_small/Parc National des Calanques.jpg"
+                src="images/activites/4_small/Parc-National-des-Calanques.jpg"
+                alt="Parc_National_des_Calanques"
               />
             </div>
             <figcaption>
@@ -330,6 +344,7 @@
               <img
                 class="imgBlocActivites2Size2"
                 src="images/activites/4_small/Notre-Dame-de-la-Garde.jpg"
+                alt="Notre-Dame-de-la-Garde"
               />
             </div>
             <figcaption>
@@ -340,7 +355,8 @@
             <div>
               <img
                 class="imgBlocActivites2Size1"
-                src="images/activites/4_small/Parc Longchamp.jpg"
+                src="images/activites/4_small/Parc-Longchamp.jpg"
+                alt="Parc_Longchamp"
               />
             </div>
             <figcaption>
@@ -350,23 +366,23 @@
         </div>
       </div>
     </section>
+    <footer class="footerStyle">
+      <div class="footerItem">
+        <h2>A propos</h2>
+        <p>Fonctionnement du site</p>
+        <p>Conditions générales de vente</p>
+        <p>Données et confidentialité</p>
+      </div>
+      <div class="footerItem">
+        <h2>Nos hébergements</h2>
+        <p>Charte qualité</p>
+        <p>Soumettre votre hôtel</p>
+      </div>
+      <div class="footerItem">
+        <h2>Assistance</h2>
+        <p>Centre d'aide</p>
+        <p>Nous contacter</p>
+      </div>
+    </footer>
   </body>
-  <footer class="footerStyle">
-    <div class="footerItem">
-      <h2>A propos</h2>
-      <p>Fonctionnement du site</p>
-      <p>Conditions générales de vente</p>
-      <p>Données et confidentialité</p>
-    </div>
-    <div class="footerItem">
-      <h2>Nos hébergements</h2>
-      <p>Charte qualité</p>
-      <p>Soumettre votre hôtel</p>
-    </div>
-    <div class="footerItem">
-      <h2>Assistance</h2>
-      <p>Centre d'aide</p>
-      <p>Nous contacter</p>
-    </div>
-  </footer>
 </html>
