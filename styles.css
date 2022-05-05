@@ -73,22 +73,15 @@ body {
 }
 .menu-items {
   width: 140px;
-  height: 99px;
+  height: 100px;
 }
 .menu-items:hover > .coloritem1 {
-  color: #0065fc;
-}
-.menu-items:hover > .coloritem2 {
   color: #0065fc;
 }
 .coloritem3 {
   color: black;
 }
-.bordureNav:hover > .coloritem1 {
-  color: #0065fc;
-  border-top: 1px solid #0065fc;
-}
-.bordureNav2:hover > .coloritem2 {
+.menu-items:hover {
   color: #0065fc;
   border-top: 1px solid #0065fc;
 }
@@ -428,8 +421,8 @@ figure {
     padding: 3% 0 0 5%;
   }
   .filtre {
-    flex-direction: column;
-    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .margFiltre {
     margin-top: 20px;
@@ -440,21 +433,27 @@ figure {
     width: 30%;
     align-items: flex-start;
   }
-  .flexBetween .textIcons {
-    justify-content: space-around;
-    align-items: flex-start;
+  .filtreText {
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  .flexBetween .filtre {
-    margin-bottom: 2%;
+  .filtreText .flexCentre {
+    justify-content: space-around;
+    align-items: center;
+  }
+  .flexBetween {
+    margin-bottom: 10px;
   }
   .containerGlobalHebergements {
     flex-direction: column-reverse;
     width: auto;
     margin: 5px;
+    padding-left: 3%;
+    padding-right: 3%;
   }
   .menuGlobalPop {
     width: auto;
-    padding: 1%;
+    padding: 3%;
     margin: 0;
   }
   .titreAsidePop {
@@ -478,7 +477,7 @@ figure {
   }
   .menuHebergements {
     width: auto;
-    padding: 0;
+    padding: 2%;
     margin-top: 30px;
   }
   .textHeb {
@@ -491,13 +490,13 @@ figure {
   }
   .styleBloc {
     width: 95%;
-    height: 300px;
+    height: 180px;
     box-shadow: 0px 0px 5px 5px #f2f2f2;
     border-radius: 30px;
     padding-bottom: 10px;
   }
   .imgHebergements {
-    aspect-ratio: 7/2;
+    aspect-ratio: 16/7;
     border-radius: 30px 30px 0 0;
   }
   .star {
@@ -507,13 +506,13 @@ figure {
     font-size: 20px;
   }
   .h2Activites {
-    padding-left: 7%;
+    padding-left: 10%;
   }
   .menuActivites {
     flex-direction: column;
-    width: 100%;
+    width: auto;
     height: auto;
-    padding-left: 10px;
+    padding: 3%;
   }
   .Box1 {
     width: auto;
