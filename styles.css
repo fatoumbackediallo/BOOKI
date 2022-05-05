@@ -75,20 +75,22 @@ body {
   width: 140px;
   height: 99px;
 }
-.coloritem1 {
+.menu-items:hover > .coloritem1 {
   color: #0065fc;
 }
-.coloritem2 {
-  color: grey;
+.menu-items:hover > .coloritem2 {
+  color: #0065fc;
 }
 .coloritem3 {
   color: black;
 }
-.bordureNav {
+.bordureNav:hover > .coloritem1 {
+  color: #0065fc;
   border-top: 1px solid #0065fc;
 }
-.bordureNav2 {
-  border-top: 1px solid transparent;
+.bordureNav2:hover > .coloritem2 {
+  color: #0065fc;
+  border-top: 1px solid #0065fc;
 }
 /*Section*/
 .styleSection {
@@ -237,6 +239,7 @@ body {
   width: 100%;
   height: auto;
   cursor: pointer;
+  box-shadow: -5px 5px 5px 5px lightgray;
 }
 .imgHebergements {
   object-fit: cover;
