@@ -431,7 +431,7 @@ figure {
   .textIcons {
     height: 50px;
     width: 30%;
-    align-items: flex-start;
+    justify-content: flex-start;
   }
   .filtreText {
     padding-left: 10px;
