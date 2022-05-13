@@ -1,6 +1,7 @@
 /*General */
 html,
 body {
+  margin: 0;
   font-family: raleway;
 }
 .flexCentre {
@@ -53,6 +54,8 @@ body {
 /* Nav */
 .sizeNav {
   height: 120px;
+  padding-left: 2%;
+  padding-right: 3%;
 }
 .logo {
   object-fit: cover;
@@ -75,19 +78,19 @@ body {
   width: 140px;
   height: 100px;
 }
+.colorItem1 {
+  color: black;
+}
 .menu-items:hover > .coloritem1 {
   color: #0065fc;
 }
-.coloritem3 {
-  color: black;
-}
 .menu-items:hover {
-  color: #0065fc;
-  border-top: 1px solid #0065fc;
+  border-top: 3px solid #0065fc;
 }
 /*Section*/
 .styleSection {
-  padding-left: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 .bordureSearch {
   width: 400px;
@@ -154,6 +157,7 @@ body {
   border-radius: 30px;
   margin-right: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 .textIcons .flexCentre {
   display: flex;
@@ -183,6 +187,7 @@ body {
 .info {
   display: flex;
   align-items: center;
+  padding-left: 1%;
 }
 .formIcon {
   width: 20px;
@@ -198,6 +203,8 @@ body {
   margin-right: 0.5%;
   justify-content: space-between;
   padding-bottom: 30px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .menuHebergements {
   flex: 0.63;
@@ -205,7 +212,7 @@ body {
   border-radius: 30px;
   padding: 25px;
   width: 100%;
-  height: 660px;
+  height: 700px;
 }
 .blocHebergements {
   display: flex;
@@ -214,13 +221,16 @@ body {
   margin-bottom: 20px;
 }
 .textHeb {
-  font-size: 20px;
+  font-size: 22px;
 }
 .star-selected {
   color: #0065fc;
 }
 .star-neutral {
   color: lightgray;
+}
+.stylePrice {
+  font-weight: bold;
 }
 .styleBloc {
   display: flex;
@@ -261,7 +271,7 @@ body {
   border-radius: 30px;
   padding: 30px;
   width: 50%;
-  height: 650px;
+  height: 690px;
 }
 .titreAsidePop {
   display: flex;
@@ -281,7 +291,7 @@ body {
   padding-bottom: 30px;
 }
 .h3MenuPop {
-  font-size: 20px;
+  font-size: 22px;
 }
 .styleBlocPop {
   display: flex;
@@ -300,19 +310,27 @@ body {
   width: 50%;
   aspect-ratio: 6/5;
 }
+.fontPrice {
+  font-weight: bold;
+}
 .infoPlus {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  padding: 3%;
+  padding: 1% 3% 3% 3%;
   font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 /*Activités*/
 .menuActivites {
   display: flex;
-  width: 100%;
+  width: auto;
   height: 480px;
   padding-bottom: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .Box1 {
   display: flex;
@@ -375,6 +393,8 @@ body {
 .h2Activites {
   display: flex;
   margin-left: 20px;
+  font-size: 22px;
+  padding-left: 2%;
 }
 .h3activites {
   border-radius: 0px 0px 20px 20px;
@@ -388,10 +408,18 @@ figure {
 .footerStyle {
   display: flex;
   background-color: #f2f2f2;
-  padding-left: 5%;
+  padding-left: 3%;
 }
 .footerItem {
   padding-right: 20%;
+}
+.styleFooterItem {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.styleFooterH2 {
+  font-size: 18px;
 }
 /*Media queries*/
 /*Pour les ordinateurs*/
@@ -406,10 +434,13 @@ figure {
     width: auto;
   }
   .body {
-    width: 100%;
+    width: auto;
   }
   .sizeNav {
     padding-left: 3%;
+  }
+  .logo {
+    padding-left: 0;
   }
   .menu-container {
     width: auto;
@@ -417,8 +448,12 @@ figure {
     justify-content: space-around;
     align-items: center;
   }
+  .menu-tiems {
+    color: black;
+    font-weight: bold;
+  }
   .styleSection {
-    padding: 3% 0 0 5%;
+    padding: 4% 0 0 5%;
   }
   .filtre {
     flex-direction: row;
@@ -432,6 +467,7 @@ figure {
     height: 50px;
     width: 30%;
     justify-content: flex-start;
+    margin-right: 10px;
   }
   .filtreText {
     padding-left: 10px;
@@ -482,7 +518,7 @@ figure {
   }
   .textHeb {
     margin-right: 20px;
-    padding-left: 7%;
+    padding-left: 4%;
   }
   .blocHebergements {
     width: auto;
@@ -506,7 +542,7 @@ figure {
     font-size: 20px;
   }
   .h2Activites {
-    padding-left: 10%;
+    padding-left: 5%;
   }
   .menuActivites {
     flex-direction: column;
@@ -539,6 +575,12 @@ figure {
   .imgBlocActivites2Size2 {
     height: 190px;
   }
+  .footerStyle {
+    padding-left: 5%;
+  }
+  .footerItem {
+    padding-right: 10%;
+  }
 }
 /*pour les smartphones*/
 @media all and (max-width: 768px) {
@@ -548,12 +590,15 @@ figure {
   .body {
     width: auto;
     height: auto;
+    margin: 0;
   }
   .nav {
     width: auto;
   }
   .sizeNav {
     height: 70px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .flexBetween {
     flex-direction: row;
@@ -604,13 +649,13 @@ figure {
     padding-right: 5%;
     padding-left: 5%;
   }
-  .menu-container {
-    width: auto;
-    height: 100px;
-    margin-bottom: 0;
-  }
   .menu-items {
     height: 70px;
+    width: 250px;
+    color: black;
+  }
+  .menu-items:hover {
+    border-top: none;
   }
   .marglogo {
     max-width: 100%;
@@ -618,15 +663,22 @@ figure {
   .menu-container {
     flex-direction: row;
     padding-left: 0;
-    width: auto;
+    width: 100%;
     margin-bottom: 5%;
+    height: 100px;
   }
   .bordureNav {
     border-top: 1px solid transparent;
+    border-bottom: 3px solid lightgray;
+  }
+  .bordureNav:hover {
     border-bottom: 3px solid #0065fc;
   }
   .bordureNav2 {
     border-bottom: 3px solid lightgray;
+  }
+  .bordureNav2:hover {
+    border-bottom: 3px solid #0065fc;
   }
   .h1 {
     flex-wrap: wrap;
@@ -665,7 +717,10 @@ figure {
   }
   .menuGlobalPop {
     width: auto;
-    padding: 5% 7% 0 5%;
+    border-radius: 0;
+  }
+  .titreAsidePop {
+    padding-left: 3%;
   }
   .blocPopulaires {
     flex-direction: column;
@@ -685,14 +740,16 @@ figure {
   }
   .containerGlobalHebergements {
     flex-direction: column-reverse;
+    margin: 0;
   }
   .menuHebergements {
     width: auto;
     background-color: white;
-    padding: 20px 0 0 0;
+    padding: 0;
+    margin: 1%;
   }
   .textHeb {
-    margin-left: 5%;
+    padding-left: 3%;
   }
   .blocHebergements {
     flex-direction: column;
@@ -729,6 +786,7 @@ figure {
     height: auto;
     flex-direction: column;
     padding: 0 0 20px 0;
+    margin: 3%;
   }
   .Box1 {
     width: auto;
@@ -769,5 +827,8 @@ figure {
   }
   footer {
     flex-direction: column;
+  }
+  .footerStyle {
+    padding-left: 5%;
   }
 }

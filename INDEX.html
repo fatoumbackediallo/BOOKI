@@ -50,13 +50,13 @@
         <div class="backgroundColor1 flexCentre iconMap">
           <i class="fa-solid fa-location-dot"></i>
         </div>
-        <div>
+        <form>
           <input
             class="recherche flexCentre bordureSearch paddingSearch"
             type="search"
-            value="Marseille, France"
+            placeholder="Marseille, France"
           />
-        </div>
+        </form>
         <div class="buttonSearchContainer backgroundColor2">
           <a class="flexCentre buttonSearch">
             <span class="searchButtonTitle">Rechercher</span
@@ -113,7 +113,9 @@
             />
             <figcaption class="styleFigcap">
               <h3 class="h3Bloc">Auberge La Cannebière</h3>
-              <span class="spanNuit">Nuit à partir de 25€</span>
+              <span class="spanNuit"
+                >Nuit à partir de <span class="fontPrice">25€</span></span
+              >
               <div class="star">
                 <i class="fa-star fa-solid star-selected"></i
                 ><i class="fa-star fa-solid star-selected"></i
@@ -131,7 +133,9 @@
             />
             <figcaption class="styleFigcap">
               <h3 class="h3Bloc">Hôtel du port</h3>
-              <span class="spanNuit">Nuit à partir de 52€</span>
+              <span class="spanNuit"
+                >Nuit à partir de 52<span class="fontPrice">€</span></span
+              >
               <div class="star">
                 <i class="fa-star fa-solid star-selected"></i
                 ><i class="fa-star fa-solid star-selected"></i
@@ -149,7 +153,9 @@
             />
             <figcaption class="styleFigcap">
               <h3 class="h3Bloc">Hôtel Les mouettes</h3>
-              <span class="spanNuit">Nuit à partir de 76€</span>
+              <span class="spanNuit"
+                >Nuit à partir de 76<span class="fontPrice">€</span></span
+              >
               <div class="star">
                 <i class="fa-star fa-solid star-selected"></i
                 ><i class="fa-star fa-solid star-selected"></i
@@ -169,7 +175,9 @@
             />
             <figcaption class="styleFigcap">
               <h3 class="h3Bloc">Hôtel de la mer</h3>
-              <span class="spanNuit">Nuit à partir de 46€</span>
+              <span class="spanNuit"
+                >Nuit à partir de 46<span class="fontPrice">€</span></span
+              >
               <div class="star">
                 <i class="fa-star fa-solid star-selected"></i
                 ><i class="fa-star fa-solid star-selected"></i
@@ -187,7 +195,9 @@
             />
             <figcaption class="styleFigcap">
               <h3 class="h3Bloc">Auberge Le Panier</h3>
-              <span class="spanNuit">Nuit à partir de 23€</span>
+              <span class="spanNuit"
+                >Nuit à partir de <span class="fontPrice">23€</span></span
+              >
               <div class="star">
                 <i class="fa-star fa-solid star-selected"></i
                 ><i class="fa-star fa-solid star-selected"></i
@@ -205,7 +215,9 @@
             />
             <figcaption class="styleFigcap">
               <h3 class="h3Bloc">Hôtel Chez Amina</h3>
-              <span class="spanNuit">Nuit à partir de 96€</span>
+              <span class="spanNuit"
+                >Nuit à partir de 96<span class="fontPrice">€</span></span
+              >
               <div class="star">
                 <i class="fa-star fa-solid star-selected"></i
                 ><i class="fa-star fa-solid star-selected"></i
@@ -216,7 +228,7 @@
             </figcaption>
           </figure>
         </div>
-        <a class="infoPlus">Afficher plus</a>
+        <a href="#" class="infoPlus">Afficher plus</a>
       </section>
       <aside class="menuGlobalPop backgroundColor1">
         <div class="titreAsidePop">
@@ -235,7 +247,9 @@
             <figcaption class="textBlocPop">
               <div>
                 <h3 class="h3Bloc">Hôtel Le soleil du matin</h3>
-                <span class="spanNuit">Nuit à partir de 128€</span>
+                <span class="spanNuit"
+                  >Nuit à partir de 128<span class="fontPrice">€</span></span
+                >
               </div>
               <div class="starPop">
                 <i class="fa-star fa-solid star-selected"></i
@@ -255,7 +269,9 @@
             <figcaption class="textBlocPop">
               <div>
                 <h3 class="h3Bloc">Au coeur de l'eau Chambres d'hôtes</h3>
-                <span class="spanNuit">Nuit à partir de 71€</span>
+                <span class="spanNuit"
+                  >Nuit à partir de 71<span class="fontPrice">€</span></span
+                >
               </div>
               <div class="starPop">
                 <i class="fa-star fa-solid star-selected"></i
@@ -275,7 +291,9 @@
             <figcaption class="textBlocPop">
               <div>
                 <h3 class="h3Bloc">Hôtel Tout bleu et Blanc</h3>
-                <span class="spanNuit">Nuit à partir de 68€</span>
+                <span class="spanNuit"
+                  >Nuit à partir de 68<span class="fontPrice">€</span></span
+                >
               </div>
               <div class="starPop">
                 <i class="fa-star fa-solid star-selected"></i
@@ -378,20 +396,24 @@
     </section>
     <footer class="footerStyle">
       <div class="footerItem">
-        <h2>A propos</h2>
-        <p>Fonctionnement du site</p>
-        <p>Conditions générales de vente</p>
-        <p>Données et confidentialité</p>
+        <h2 class="styleFooterH2">A propos</h2>
+        <p><a href="#" class="styleFooterItem">Fonctionnement du site</a></p>
+        <p>
+          <a href="#" class="styleFooterItem">Conditions générales de vente</a>
+        </p>
+        <p>
+          <a href="#" class="styleFooterItem">Données et confidentialité</a>
+        </p>
       </div>
       <div class="footerItem">
-        <h2>Nos hébergements</h2>
-        <p>Charte qualité</p>
-        <p>Soumettre votre hôtel</p>
+        <h2 class="styleFooterH2">Nos hébergements</h2>
+        <p><a href="#" class="styleFooterItem">Charte qualité</a></p>
+        <p><a href="#" class="styleFooterItem">Soumettre votre hôtel</a></p>
       </div>
       <div class="footerItem">
-        <h2>Assistance</h2>
-        <p>Centre d'aide</p>
-        <p>Nous contacter</p>
+        <h2 class="styleFooterH2">Assistance</h2>
+        <p><a href="#" class="styleFooterItem">Centre d'aide</a></p>
+        <p><a href="#" class="styleFooterItem">Nous contacter</a></p>
       </div>
     </footer>
   </body>
