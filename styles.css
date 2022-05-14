@@ -81,7 +81,7 @@ body {
 .colorItem1 {
   color: black;
 }
-.menu-items:hover > .coloritem1 {
+.menu-items:hover > .colorItem1 {
   color: #0065fc;
 }
 .menu-items:hover {
@@ -829,6 +829,6 @@ figure {
     flex-direction: column;
   }
   .footerStyle {
-    padding-left: 5%;
+    padding-left: 7%;
   }
 }
